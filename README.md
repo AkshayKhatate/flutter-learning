@@ -1,17 +1,26 @@
-# untitled
+# Flutter Learning
 
-A new Flutter project.
+This repository documents my Flutter learning journey.
 
-## Getting Started
+## Purpose
 
-This project is a starting point for a Flutter application.
+- Learn Flutter from fundamentals.
+- Build small projects while following structured courses.
+- Practice Git and GitHub.
+- Track progress through regular commits.
 
-A few resources to get you started if this is your first Flutter project:
+## Progress
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- ✅ Flutter environment setup
+- ✅ Dart basics
+- ✅ Basic widgets
+- ✅ Assets and pubspec configuration
+- ✅ First GitHub repository and initial commit
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Next
+
+- Layout widgets
+- Stateful widgets
+- Navigation
+- Dart OOP
+- Projects
