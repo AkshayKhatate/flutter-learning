@@ -1,8 +1,101 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() {
-  runApp(MyApp()
+  runApp(MyCard()
   );
+}
+
+class MyCard extends StatelessWidget {
+  const MyCard({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(home: Scaffold(
+      appBar: AppBar(
+        // title: Text("I am Rich"),
+        backgroundColor: Colors.teal,
+      ),
+      backgroundColor: Colors.teal,
+      body: SafeArea(
+
+        child:
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage("images/diamond.jpg"),
+            ),
+            Text('Akshay Khatate', style: TextStyle(
+              fontSize: 25.0,
+              color: Colors.white,
+              fontFamily: 'Pacifico'
+            ),
+            ),
+            Text('MOBILE APP DEVELOPER', style: TextStyle(
+                fontSize: 15.0,
+                color: Colors.white,
+              fontFamily: 'SourceSans'
+            ),
+            ),
+          SizedBox(
+            width: 250.0,
+            child: (
+            Divider(height: 1.0, color: Colors.white,thickness: 2.0)
+            ),
+
+          )
+          ,
+            Card(
+              color: Colors.white,
+              margin: EdgeInsetsDirectional.symmetric(vertical:10.0, horizontal: 25.0),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    size: 20.0,
+                    color: Colors.teal.shade900,
+                  ),
+                  title:  Text('+91 9967 56 8753',
+                      style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.teal.shade900,
+                          fontFamily: 'SourceSans'
+                      )
+                  ),
+                )
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(10.0),
+              color: Colors.white,
+              margin: EdgeInsetsDirectional.symmetric(vertical:10.0, horizontal: 25.0),
+              child: Row( children: [
+                Icon(
+                  Icons.email,
+                  size: 20.0,
+                  color: Colors.teal.shade900,
+                ),SizedBox(
+                  width: 10.0,
+                ),
+                Text('akshay@gmail.com',
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSans'
+                    )
+                )
+              ]
+              ),
+            )
+          ],
+        )
+      ),
+    )
+    );
+}
 }
 
 class MyApp extends StatelessWidget {
@@ -48,7 +141,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 
 // void main() {
 //   runApp(MaterialApp(home: Scaffold(
