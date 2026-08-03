@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/physics.dart';
 import 'package:flutter/rendering.dart';
+import 'dart:math';
 
 void main() {
-  runApp(MyCard()
+  runApp(
+     // MyCard()
+      MyApp()
+
   );
 }
+
 
 class MyCard extends StatelessWidget {
   const MyCard({super.key});
@@ -106,7 +112,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(home: Scaffold(
       appBar: AppBar(
         // title: Text("I am Rich"),
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.redAccent.shade700,
       ),
       backgroundColor: Colors.teal,
       body: SafeArea(
